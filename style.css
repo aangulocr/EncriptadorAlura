@@ -1,0 +1,244 @@
+/***********************************/
+/*              Header             */
+/**********************************/
+
+header {
+    background-color: #0075a1;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 2rem;
+
+    height: 80px;
+    width: 100%;
+
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo-header img {
+    width: 50px;
+    display: block;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/***********************************/
+/*                Main             */
+/**********************************/
+
+.main{
+    max-width: 850px;
+    margin: 120px auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #ddd;
+    background: #fff;
+
+    display: grid;
+    /* grid-template-columns: max-content max-content; */
+    gap: 1rem;
+    overflow: hidden;
+    
+    grid-template-areas: 
+        'cifrar descifrar';
+    
+}
+
+.cifrar{
+    grid-area: cifrar;
+
+    div > *{
+        margin: .5rem;        
+        background-color: azure;
+        border: 3px solid cadetblue;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+}
+
+.descifrar{
+    grid-area:descifrar;
+   
+    div > *{
+        margin: .5rem;
+        background-color: azure;
+        border: 3px solid cadetblue;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+}
+
+.button:hover{
+    background-color: #3e8e41;
+}
+
+textarea{
+    display: block;
+    resize: none;
+    text-transform: lowercase;
+    
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+}
+
+.footer{
+    font-size: 1rem;
+
+    color: gray;
+    margin: 1rem;
+    text-align: center;
+
+    
+}
+
+/* Responsive Configuration */
+
+@media only screen and (max-width: 850px) {
+    .main{
+        display: grid;
+        grid-template-areas: 
+        'cifrar'
+        'descifrar';
+       width: 50%;
+       overflow: hidden;
+    }
+    
+    
+
+/***********************************/
+/*              Header             */
+/**********************************/
+
+header {
+    background-color: #0075a1;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 2rem;
+
+    height: 80px;
+    width: 100%;
+
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo-header img {
+    width: 50px;
+    display: block;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/***********************************/
+/*                Main             */
+/**********************************/
+
+.main{
+    max-width: 850px;
+    margin: 120px auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #ddd;
+    background: #fff;
+
+    display: grid;
+    /* grid-template-columns: max-content max-content; */
+    gap: 1rem;
+    overflow: hidden;
+    
+    grid-template-areas: 
+        'cifrar descifrar';
+    
+}
+
+.cifrar{
+    grid-area: cifrar;
+
+    div > *{
+        margin: .5rem;        
+        background-color: azure;
+        border: 3px solid cadetblue;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+}
+
+.descifrar{
+    grid-area:descifrar;
+   
+    div > *{
+        margin: .5rem;
+        background-color: azure;
+        border: 3px solid cadetblue;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+}
+
+.button:hover{
+    background-color: #3e8e41;
+}
+
+textarea{
+    display: block;
+    resize: none;
+    text-transform: uppercase;
+    
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+}
+
+.footer{
+    font-size: 1rem;
+
+    color: gray;
+    margin: 1rem;
+    text-align: center;
+
+    
+}
+
+/* Responsive Configuration */
+
+@media only screen and (max-width: 850px) {
+    .main{
+        display: grid;
+        grid-template-areas: 
+        'cifrar'
+        'descifrar';
+       width: 50%;
+       overflow: hidden;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - AAM</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+        <header class="header">
+            <div class="logo-header">
+                <img src="logoAAM.png" alt="Logo">
+            </div>
+            <div>
+                <p>Encriptador de Mensaje</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="cifrar">
+                <textarea name="cifrar" id="cifrar" cols="50" rows="10" ></textarea>
+                <div>
+                    <button id="btn_cifrar" class="button">CIFRAR</button>
+                    <button id="btn_descifrar" class="button">DESCIFRAR</button>
+                </div>
+            </section>
+           
+            <section class="descifrar">
+                <textarea name="descifrar" id="descifrar" cols="50" rows="10" readonly  wrap="soft" placeholder="NO HAY MENSAJE QUE DESCIFRAR"></textarea>
+                <div>
+                    <button id="btn_copiar" class="button">COPIAR</button>
+                </div>
+            </section>
+        </main>
+       
+        <footer class="footer">
+            
+            <h4>&copy;AAM</h4>            
+        </footer>        
+   
+    <script src="index.js"></script>
+</body>
+
+</html>
